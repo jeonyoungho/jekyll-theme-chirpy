@@ -20,7 +20,7 @@ github:
   username: jeonyoungho # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: jeonyoungho_o # change to your twitter username
 
 social:
   # Change to your full name.
@@ -29,7 +29,7 @@ social:
   email: yhjun1000@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/username # change to your twitter homepage
+    - https://twitter.com/jeonyoungho_o # change to your twitter homepage
     - https://github.com/jeonyoungho # change to your github homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/profile.php?id=100004766491505
