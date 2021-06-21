@@ -3,50 +3,53 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+title: Youngho's blog # the main title
+tagline: steadily every day # it will display as the sub-title
+description: >- # used by seo meta and the atom feed
+  Youngho's blog
+
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://jeonyoungho.github.io"
+
+author: jeonyoungho
+
+# the avatar on sidebar, support local or CORS resources
+avatar: /assets/img/youngho.png # https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
+
+github:
+  username: jeonyoungho # change to your github username
+
+# twitter:
+#  username: twitter_username # change to your twitter username
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: jeonyoungho
+  email: yhjun1000@gmail.com # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    # - https://twitter.com/username # change to your twitter homepage
+    - https://github.com/jeonyoungho # change to your github homepage
+    # Uncomment below to add more social links
+    - https://www.facebook.com/profile.php?id=100004766491505
+    - https://www.instagram.com/jyho_o/
+    # - https://www.linkedin.com/in/username
+
+google_site_verification: google_meta_tag_verification # change to your verification string
+# --------------------------
+
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
 baseurl: ""
 
 # the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
-lang: en-US
+lang: ko # en-US
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# --------------------------
-title: Chirpy # the main title
-
-tagline: A text-focused Jekyll theme # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
-
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://jeonyoungho.github.io"
-
-github:
-  username: github_username # change to your github username
-
-twitter:
-  username: twitter_username # change to your twitter username
-
-social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@doamin.com # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
-google_site_verification: google_meta_tag_verification # change to your verification string
 # --------------------------
 
 google_analytics:
@@ -55,6 +58,10 @@ google_analytics:
   pv:
     proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
     cache_path: # the local PV cache data, friendly to visitors from GFW region
+
+disqus:
+  comments: true # boolean type, the global switch for posts comments.
+  shortname: "" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # Prefer color scheme setting.
 #
@@ -69,6 +76,11 @@ google_analytics:
 #
 theme_mode: dark # [light|dark]
 
+# boolean type, the global switch for ToC in posts.
+toc: true
+
+paginate: 10
+
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
@@ -76,21 +88,10 @@ theme_mode: dark # [light|dark]
 # e.g. 'https://cdn.com'
 img_cdn: ""
 
-# the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/youngho.png # https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
-
-# boolean type, the global switch for ToC in posts.
-toc: true
-
-disqus:
-  comments: false # boolean type, the global switch for posts comments.
-  shortname: "" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-paginate: 10
-
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
+  highlighter: rouge
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
@@ -98,7 +99,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: true # 코드 블록 라인 넘버 유무
       start_line: 1
 
 collections:
