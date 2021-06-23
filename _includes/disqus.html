@@ -14,7 +14,7 @@
 <script src="{{ '/assets/js/lib/jquery.disqusloader.min.js' | relative_url }}"></script>
 <script>
   const options = {
-    scriptUrl: '//youngho-devlog.disqus.com/embed.js',
+    scriptUrl: '//{{ site.disqus.shortname }}.disqus.com/embed.js',
 
     disqusConfig: function() {
       this.page.title = '{{ page.title }}';
